@@ -32,3 +32,19 @@ h6 {
   max-width: 800px;
   margin: 0 auto;
 }
+
+.nav {
+  margin: 10px;
+  padding: 5px 5px;
+  color: #191919;
+}
+
+a:hover {
+  color: deeppink;
+  background-color: pink;
+}
+
+a:active {
+  color: navy;
+  background-color: lightsteelblue;
+}
