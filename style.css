@@ -1,9 +1,7 @@
+/* universal selectors*/
+
 * {
   box-sizing: border-box;
-}
-
-body {
-  margin: 0;
 }
 
 * {
@@ -11,6 +9,16 @@ body {
   color: #191919;
   line-height: 1.5;
   letter-spacing: 0.025em;
+}
+
+*::selection {
+  background-color: #f2eadf;
+}
+
+/* tag selectors*/
+
+body {
+  margin: 0;
 }
 
 h1,
@@ -22,6 +30,22 @@ h6 {
   font-family: "Jost", sans-serif;
   font-style: bold;
 }
+
+a:hover {
+  color: blue;
+  background-color: lightsteelblue;
+}
+
+a:active {
+  color: gold;
+  background-color: lightyellow;
+}
+
+li {
+  padding-bottom: 10px;
+}
+
+/* class selectors*/
 
 .header {
   padding: 50px 20px;
@@ -45,16 +69,6 @@ h6 {
   color: #191919;
 }
 
-a:hover {
-  color: blue;
-  background-color: lightsteelblue;
-}
-
-a:active {
-  color: gold;
-  background-color: lightyellow;
-}
-
 .main article {
   border-top: 1px solid #191919;
 }
@@ -63,19 +77,11 @@ a:active {
   border-top: none;
 }
 
-.main > * + * {
+.main article {
   margin-top: 20px;
 }
 
 .link {
   padding: 5px 5px;
   color: #191919;
-}
-
-li {
-  padding-bottom: 10px;
-}
-
-::selection {
-  background-color: #f2eadf;
 }
