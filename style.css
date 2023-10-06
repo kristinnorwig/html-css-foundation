@@ -29,6 +29,10 @@ h6 {
   background-color: #f2eadf;
 }
 
+.profession::after {
+  content: "🌝";
+}
+
 .main {
   padding: 20px;
   max-width: 800px;
@@ -47,8 +51,8 @@ a:hover {
 }
 
 a:active {
-  color: deeppink;
-  background-color: pink;
+  color: gold;
+  background-color: lightyellow;
 }
 
 .main article {
@@ -70,4 +74,8 @@ a:active {
 
 li {
   padding-bottom: 10px;
+}
+
+::selection {
+  background-color: #f2eadf;
 }
