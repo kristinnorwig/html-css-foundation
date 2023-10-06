@@ -9,6 +9,8 @@ body {
 * {
   font-family: "Jost", sans-serif;
   color: #191919;
+  line-height: 1.5;
+  letter-spacing: 0.025em;
 }
 
 h1,
@@ -40,11 +42,32 @@ h6 {
 }
 
 a:hover {
+  color: blue;
+  background-color: lightsteelblue;
+}
+
+a:active {
   color: deeppink;
   background-color: pink;
 }
 
-a:active {
-  color: navy;
-  background-color: lightsteelblue;
+.main article {
+  border-top: 1px solid #191919;
+}
+
+.main > :first-child {
+  border-top: none;
+}
+
+.main > * + * {
+  margin-top: 20px;
+}
+
+.link {
+  padding: 5px 5px;
+  color: #191919;
+}
+
+li {
+  padding-bottom: 10px;
 }
