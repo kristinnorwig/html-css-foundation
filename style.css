@@ -57,16 +57,39 @@ li {
   content: "🌝";
 }
 
-.main {
-  padding: 1rem;
-  max-width: 50rem;
-  margin: 0 auto;
+.name-profession-header {
+  font-size: 4rem;
+}
+.profession {
+  font-size: 0.25em;
+}
+
+.name-header {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.badge-header {
+  background-color: lightyellow;
+  color: gold;
+  padding: 1rem 1rem;
+  margin: 0;
+  font-weight: 700;
+  position: absolute;
+  right: 5rem;
+  top: 5rem;
 }
 
 .nav {
   margin: 0.5rem;
   padding: 0.25rem 0.25rem;
   color: #191919;
+}
+
+.main {
+  padding: 1rem;
+  max-width: 75ch;
+  margin: 0 auto;
 }
 
 .main article {
@@ -82,10 +105,9 @@ li {
   margin-top: 1rem;
 }
 
-.link {
-  margin: 0.5rem;
-  padding: 0.25rem 0.25rem;
-  color: inherit;
+.article-header {
+  position: relative;
+  left: -1rem;
 }
 
 .experience-heading {
@@ -96,18 +118,8 @@ li {
   display: inline;
 }
 
-.badge-header {
-  background-color: lightyellow;
-  color: gold;
-  padding: 1rem 1rem;
-  margin: 0px;
-  font-weight: 700;
-  position: absolute;
-  right: 4rem;
-  top: 4rem;
-}
-
-.article-header {
-  position: relative;
-  left: -1rem;
+.link {
+  margin: 0.5rem;
+  padding: 0.25rem 0.25rem;
+  color: inherit;
 }
