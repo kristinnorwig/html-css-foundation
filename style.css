@@ -27,7 +27,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-style: bold;
+  font-weight: 700;
 }
 
 a:hover {
@@ -70,6 +70,7 @@ li {
 
 .main article {
   border-top: 1px solid #191919;
+  padding: 20px;
 }
 
 .main > :first-child {
@@ -82,7 +83,7 @@ li {
 
 .link {
   padding: 5px 5px;
-  color: #191919;
+  color: inherit;
 }
 
 .experience-heading {
@@ -91,4 +92,21 @@ li {
 
 .experience-sub-heading {
   display: inline;
+}
+
+.badge-header {
+  background-color: lightyellow;
+  color: gold;
+  padding: 42px 21px;
+  margin: 0px;
+  font-weight: 700;
+  border-radius: 100%;
+  position: absolute;
+  right: 70px;
+  top: 70px;
+}
+
+.heading-position {
+  position: relative;
+  left: -20px;
 }
