@@ -4,26 +4,21 @@
   box-sizing: border-box;
 }
 
-html {
-  --main-color: #38425b;
-  --second-color: #acbbdf;
+:root {
+  --main-color: #436dfa;
+  --second-color: #c1cefa;
   --third-color: #e4efe9;
-  --hightlight-color-1: gold;
-  --hightlight-color-2: lightyellow;
+  --highlight-color-1: #2d3325;
+  --highlight-color-2: #a5fa43;
   --background-color: white;
+}
+
+html {
   color: var(--main-color);
-  font-family: "Jost", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
   letter-spacing: 0.025em;
   font-size: 16px;
-}
-
-@media screen and (prefers-color-scheme: dark) {
-  body {
-    --main-color: white;
-    --second-color: #acbbdf;
-    --background-color: #38425b;
-  }
 }
 
 *::selection {
@@ -56,16 +51,7 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-}
-
-a:hover {
-  color: var(--hightlight-color-1);
-  background-color: var(--hightlight-color-2);
-}
-
-a:active {
-  color: var(--main-color);
-  background-color: var(--third-color);
+  font-family: "Syncopate", sans-serif;
 }
 
 li {
@@ -78,9 +64,9 @@ li {
   padding: 3rem 1rem;
   text-align: center;
   background-image: linear-gradient(
-    45deg,
+    335deg,
     var(--second-color) 0%,
-    var(--third-color) 100%
+    var(--background-color) 100%
   );
 }
 
@@ -99,18 +85,27 @@ li {
 }
 
 .profession::after {
-  content: "🌝";
+  content: "🍏";
 }
 
 .badge-header {
-  color: var(--hightlight-color-1);
-  background-color: var(--hightlight-color-2);
-  padding: 1rem 1rem;
+  color: var(--highlight-color-1);
+  background-color: var(--highlight-color-2);
+  font-family: "Syncopate", sans-serif;
+  padding: 0.7rem 0.7rem;
   margin: 0;
   font-weight: 700;
   position: absolute;
-  right: 5rem;
-  top: 0;
+  right: 1rem;
+  top: 1rem;
+  border-radius: 0.5rem;
+  transform-origin: 100% 0%;
+  transition: transform 0.5s ease-in;
+}
+.header:hover .badge-header,
+.header:focus-within .badge-header {
+  opacity: 1;
+  transform: scale(1.5);
 }
 
 @media screen and (min-width: 1400px) {
@@ -136,11 +131,30 @@ li {
   margin: 0.5rem;
   padding: 0.5rem 0.5rem;
   color: var(--main-color);
+  transition: background-color 0.2s;
+  transition-timing-function: ease-in;
+  border-radius: 0.5rem;
+}
+
+.nav-link:hover {
+  background-color: var(--highlight-color-2);
+  border-radius: 0.5rem;
+}
+
+.nav-link:active {
+  color: var(--highlight-color-1);
+  background-color: var(--highlight-color-2);
+  border-radius: 0.5rem;
+}
+
+.nav-link:focus {
+  border: 1px solid var(--highlight-color-1);
+  border-radius: 0.5rem;
 }
 
 .main {
   padding: 1rem;
-  max-width: 80ch;
+  max-width: 75ch;
   margin: 0 auto;
 }
 
